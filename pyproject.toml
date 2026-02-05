@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jalali_shamsi_datepicker"
+version = "0.0.2"
+description = "The best solution to change date and datetime fields to Shamsi(Jalali) Calendar."
+authors = [{name = "Ideenemium", email = "ideenemium@gmail.com"}]
+license = {text = "MIT"}
+dependencies = []

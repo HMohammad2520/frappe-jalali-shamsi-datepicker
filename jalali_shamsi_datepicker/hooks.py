@@ -5,7 +5,7 @@ app_description = "The best solution to change date and datetime fields to Shams
 app_email = "ideenemium@gmail.com"
 app_license = "mit"
 
-# jalali_shamsi_datepicker/hooks.py
+
 fixtures = [
     {"doctype": "Custom Field", "filters": {"module": "Jalali Shamsi Datepicker"}}
 ]
