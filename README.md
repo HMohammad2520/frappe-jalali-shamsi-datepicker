@@ -1,5 +1,39 @@
-اپلیکیشن سفارشی برای تبدیل تاریخ و تقویم استاندارد میلادی نرم افزار جامع ErpNext نسخه 15 به تقویم شمسی (جلالی) می باشد.
-این اپلیکیشن ، در تمام فیلدهای تاریخ و تاریخ-ساعت ، در تمام بخشهای نرم افزار عمل می کند و همچنین ، معادل میلادی تاریخ انتخاب شده را در زیر فیلد نمایش می دهد.
+# My App - Persian/Jalali Datepicker for Frappe
 
+A simple Frappe app that integrates a Persian (Jalali) datepicker for **Date** and **Datetime** fields.  
+It displays dates in Jalali format for users but stores them in **Gregorian format** in Frappe models.
 
-A custom application to convert the standard Gregorian date and calendar of the comprehensive ErpNext software version 15 to the solar (Jalali) calendar. This application works in all date and date-time fields, in all sections of the software, and also displays the Gregorian equivalent of the selected date below the field.
+## Features
+
+- Jalali (Persian) datepicker for `Date` and `Datetime` fields
+- Converts Persian dates to Gregorian for database storage
+- Shows Gregorian equivalent next to Date fields
+- Works with standard Frappe forms
+- Includes automatic cleanup of "Only" / "فقط" suffix in `in_words` fields
+
+## Installation
+
+```bash
+# Get the app
+bench get-app https://github.com/nidyasoft/jalali_shamsi_datepicker
+
+# Install on your site
+bench --site yoursite install-app jalali_shamsi_datepicker
+
+# Restart the site
+bench --site yoursite restart
+```
+
+## Usage
+
+* After installation, the datepicker automatically attaches to all **Date** and **Datetime** fields on form load.
+* Persian dates are displayed to users, Gregorian dates are saved in the backend.
+
+## Note
+
+To ensure proper functionality, make sure the **Date Format** in Frappe **System Settings** matches the datepicker format (`YYYY/MM/DD`).  
+Incorrect formats (like `YYYY/DD/MM`) may cause issues when manually entering dates.
+
+## License
+
+MIT
