@@ -26,7 +26,8 @@ bench --site yoursite restart
 
 ## Usage
 
-* After installation, the datepicker automatically attaches to all **Date** and **Datetime** fields on form load.
+* After installation, New field will be added in `System Settings` for enabling **jalali-datepicker**.
+* This app automatically attaches to all **Date** and **Datetime** fields on form load.
 * Persian dates are displayed to users, Gregorian dates are saved in the backend.
 
 ## Note
